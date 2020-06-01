@@ -8,7 +8,7 @@
   <br></br>
     <% Owner.all.each do |x| %>
       <label><%= x.name %></label>
-      <input type="checkbox" name="pet[owner_id]" id="<%= x.id %>" value="<%= x.id %>"><%= x.name %></input>
+      <input type="radio" name="pet[owner_id]" id="<%= x.id %>" value="<%= x.id %>"><%= x.name %></input>
     <% end %>
   <br></br>
   <label>and/or create a new owner</label>
